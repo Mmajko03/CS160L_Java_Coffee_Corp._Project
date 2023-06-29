@@ -1,3 +1,11 @@
+/**
+ * Main
+ * This is the drive(or main) class of the program.
+ * CS160L-1001-1002
+ * 6/28/2023
+ * @author Maeki Kas Hana
+ */
+
 import java.io.*;
 import java.util.*;
 

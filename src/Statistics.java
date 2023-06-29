@@ -1,3 +1,11 @@
+/**
+ * Statistics
+ * Gives the Statistics of the coffee orders
+ * CS160L-1001-1002
+ * 6/28/2023
+ * @author Maeki Kas Hana
+ */
+
 import java.time.LocalDateTime;
 import java.util.List;
 

@@ -1,3 +1,11 @@
+/**
+ * WithFlavor
+ * A Coffee Decorator sub-class that adds syrup enum values to a user's coffee
+ * CS160L-1001-1002
+ * 6/28/2023
+ * @author Maeki Kas Hana
+ */
+
 import java.util.List;
 
 public class WithFlavor extends CoffeeDecorator {

@@ -1,3 +1,11 @@
+/**
+ * CoffeeOrder
+ * This class will allow a collection of coffees and their decorators to be printed in a specific time with a specific cost
+ * CS160L-1001-1002
+ * 6/28/2023
+ * @author Maeki Kas Hana
+ */
+
 import java.time.format.DateTimeFormatter;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
