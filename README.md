@@ -6,26 +6,24 @@ The application has several files/classes created and implemented in order for t
 Coffee Interface File --> This file allows all the other file that are implementing this class to use specific methods such as
 getCost(), printCoffee(), and/or getIngredients().
 
-Coffee Interface File --> 
+BlackCoffee File --> 
 
-Coffee Interface File --> 
+Espresso File --> 
 
-Coffee Interface File --> 
+CoffeeDecorator File --> 
 
-Coffee Interface File --> 
+CoffeeOrder File --> 
 
-Coffee Interface File --> 
+Main File --> 
 
-Coffee Interface File --> 
+Syrup File --> 
 
-Coffee Interface File --> 
+WithFlavor File --> 
 
-Coffee Interface File --> 
+WithHotWater File --> 
 
-Coffee Interface File --> 
+WithMilk File --> 
 
-Coffee Interface File --> 
+WithSugar File --> 
 
-Coffee Interface File --> 
-
-Coffee Interface File --> 
+WithWhippedCream File --> 
