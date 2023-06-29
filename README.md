@@ -12,7 +12,7 @@ Espresso File --> This file, similar to the BlackCoffee file, will create a coff
 
 CoffeeDecorator File --> This file will be extended by other files and act as a super class to CoffeeDecorator sub-classes. These sub-classses would be able to pass modified coffee objects to the super class and invoke several methods to get the cost, print the coffee, and/or get the ingredients. 
 
-CoffeeOrder File --> 
+CoffeeOrder File --> This file will print the order that the user has created in the main menu along with the total cost of all the items, such as the coffee decorators and coffee objects, in addition to the date and time of when the order was created.
 
 Main File --> 
 
