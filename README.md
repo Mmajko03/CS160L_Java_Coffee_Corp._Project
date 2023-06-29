@@ -18,7 +18,7 @@ Main File --> This is the file that will act as the driver of the program. This 
 
 Syrup File --> This file will hold enumeration variables to be used in the WithFlavor file. These enums will act as addtional coffee decorators.
 
-WithFlavor File --> 
+WithFlavor File --> This file acts as one of the coffee decorator classes but it instead it uses enumeration variables instead of having its own preset variable. This file is able to get the cost of these enums, as well as the ingredients. This file can also print these enums in addition to coffes objects
 
 WithHotWater File --> 
 
