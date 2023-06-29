@@ -20,10 +20,10 @@ Syrup File --> This file will hold enumeration variables to be used in the WithF
 
 WithFlavor File --> This file acts as one of the coffee decorator classes but it instead it uses enumeration variables instead of having its own preset variable. This file is able to get the cost of these enums, as well as the ingredients. This file can also print these enums in addition to coffes objects
 
-WithHotWater File --> 
+WithHotWater File --> This file is one of the coffee decorators. it will add a hot water customization to a coffe object. it also has the ability to get the cost of the hot water and also print the hot water. it can also get the ingredients as well.
 
-WithMilk File --> 
+WithMilk File --> This file is also one of the coffee decorators. It will add a milk customization to a coffee object as well as get the ingredients, the cost, and print the milk coffee decorator.
 
-WithSugar File --> 
+WithSugar File --> This is another coffee decorator sub-class that will add a sugar decorator to a coffee object. This file is able to get the cost and the ingredients of the milk coffee decorator
 
-WithWhippedCream File --> 
+WithWhippedCream File --> This is the last coffee decorator file that adds a coffee decorator to a coffee object. This particular coffee decorator will add a whipped cream coffee decorator to a coffee object. LIke other coffee decorators, this coffee decorator sub-class will get the cost and the ingredients of whipped cream. this file can also print the whipped cream coffe decorator when combined with a coffe object.
