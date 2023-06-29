@@ -12,7 +12,7 @@ public class BlackCoffee implements Coffee{
         return 1.00;
     }
 
-    public List<String> getIngredients(){ //wiwiwjwj
+    public List<String> getIngredients(){
         List<String> blackCoffeeIngredients = new ArrayList<>();
         blackCoffeeIngredients.add("Black Coffee");
 
