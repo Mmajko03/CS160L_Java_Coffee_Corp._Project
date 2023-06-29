@@ -1,6 +1,6 @@
 /**
  * Main
- * This is the drive(or main) class of the program.
+ * This is the driver(or main) class of the program.
  * CS160L-1001-1002
  * 6/28/2023
  * @author Maeki Kas Hana
@@ -15,6 +15,23 @@ public class Main {
     private static List<CoffeeOrder> orders = new ArrayList<CoffeeOrder>();
     private static String logFile = "OrderLog.txt";
     private static String inventoryFile = "Inventory.txt";
+
+    /**
+     * the main methods invokes other methods to start the coffee application
+     * the main method will let the user choose one of five options and then return to the main
+     * menu after the use is done using these options.
+     * the first option lets the user create a new coffee order
+     * the second option would let the user reload the inventory and then print the inventory present in te
+     * text file to show the user the quantities of the ingredients
+     * the third option will let the user update the inventory, meaning that after the user finishes
+     * creating a coffee order, they can update the inventory to change the quantities to indicate the ingredeints
+     * that were used in the order.
+     * the fourth options lets the user write their order log to the Order Log text file
+     * the final option lets the user exit the application
+     * if the user does not choose any of these option, then an error message will appear
+     * and the user will be sent back to the main menu.
+     * @param args
+     */
     public static void main(String[] args) {
 
         Scanner scnr = new Scanner(System.in);
@@ -69,6 +86,14 @@ public class Main {
         while(choice != '5');
 
     }
+
+    /**
+     * This method gets information from a text file that was passed in as a parameter and
+     * fills a hashmap with the contents of the text file and then the hashmap is returned.
+     * @param filePath
+     * @return
+     * @throws IOException
+     */
     private static Map<String, Integer> readInventory(String filePath) throws IOException {
         Map<String,Integer> filledInventory = new HashMap<>();
         BufferedReader inventoryReader = new BufferedReader(new FileReader(filePath));
@@ -85,6 +110,14 @@ public class Main {
 
         return filledInventory;
     }
+
+    /**
+     * this method will use a buffered writer to write to a text file
+     * the buffered writer will write the ingredients and their current quantities
+     * to the text file from the class variable inventory.
+     * @param filePath
+     * @throws IOException
+     */
     private static void writeInventory(String filePath) throws IOException {
 
             BufferedWriter orderWriter = new BufferedWriter(new FileWriter(filePath,false));
@@ -102,6 +135,15 @@ public class Main {
     private static List<CoffeeOrder> readOrderLog(String filePath) {
         return null;
     }
+
+    /**
+     * This method will access all the coffee objects and their coffee decorators present within the
+     * class variable orders and use a buffered writer to write the orders into the text file that had been
+     * passed as a parameter.
+     * the method will invoke each object's printOrder() method in order to print the order, which includes the
+     * cost, date and time, and the coffees in addition to their respective coffee decorators
+     * @param filePath
+     */
     private static void writeOrderLog(String filePath) {
 
 
@@ -124,6 +166,12 @@ public class Main {
         }
 
     }
+
+    /**
+     * checks if current item that is passed as a parameter is present within the class variable inventory
+     * @param i
+     * @return
+     */
     private static boolean isInInventory(String i) {
         if (inventory.containsKey(i) && inventory.get(i) > 0 ){
             return true;
@@ -131,7 +179,15 @@ public class Main {
         return false;
     }
 
-
+    /**
+     * this method will build a coffee order, which will consist of a coffee and coffee decorators,
+     * and, using the information present in the "inventory.txt" file, will decide whether or not that coffee can be created
+     * or if certain coffee decorators can be added to a coffee.
+     * if the coffee(s) or their decorators are able to be added, then the quantity of these coffees and coffee decorators
+     * will decrement based on if the user wants to use these ingredients in their order.
+     * after the user is done with creating their order, then the order will then be printed so the user can view it.
+     * @return
+     */
     private static CoffeeOrder buildOrder(){
 
         Scanner scnr = new Scanner(System.in);

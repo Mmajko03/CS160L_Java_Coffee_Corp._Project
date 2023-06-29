@@ -6,5 +6,8 @@
  * @author Maeki Kas Hana
  */
 
+/**
+ * creates enumerations to be used later as ingredients for the user-selected coffee(s)
+ */
 public enum Syrup { Caramel, Mocha, Vanilla }
 

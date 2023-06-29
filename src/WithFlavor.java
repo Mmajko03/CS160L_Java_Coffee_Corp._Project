@@ -12,6 +12,14 @@ public class WithFlavor extends CoffeeDecorator {
 
     private Syrup flavor;
 
+    /**
+     * takes in a user-selected enumeration from Syrup and a user-selected coffee object as parameter
+     * flavor is assigned with an enumeration from the Syrup class
+     * the coffee object is being passed to the super class, thereby invoking the
+     * super class constructor and passing the coffee object as a parameter
+     * @param c
+     * @param s
+     */
     public WithFlavor (Coffee c, Syrup s){
         super(c);
         flavor = s;
@@ -22,6 +30,10 @@ public class WithFlavor extends CoffeeDecorator {
         return super.getCost() + 0.35;
     }
 
+    /**
+     * gets the ingredients of the enumeration and passes it to its superclass
+     * @return
+     */
     public List<String> getIngredients(){
 
         List<String> Ingredients = super.getIngredients();

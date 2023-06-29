@@ -16,32 +16,56 @@ public class CoffeeOrder{
     private List<Coffee> coffees;
     private LocalDateTime orderDate;
 
+    /**
+     * class constructor to initialize the private variables in the class
+     */
     public CoffeeOrder(){
 
         coffees = new ArrayList<>();
         orderDate = LocalDateTime.now();
     }
 
+    /**
+     * method whose purpose is to retrieve the current date and time for later use
+     * @param orderDate
+     */
     public CoffeeOrder(LocalDateTime orderDate){
         this.orderDate = orderDate;
     }
 
+    /**
+     * adds the user coffee to the list coffees
+     * @param c
+     */
     public void addCoffee(Coffee c){
 
         coffees.add(c);
 
     }
 
+    /**
+     * returns the list coffees
+     * @return
+     */
     public List<Coffee> getCoffees(){
 
         return coffees;
     }
 
+    /**
+     * returns orderDate which stores the current date and time
+     * @return
+     */
     public LocalDateTime getOrderDate(){
 
         return orderDate;
     }
 
+    /**
+     * gets the total cost of the coffee(s) and the decorator(s) that the user selected by
+     * calling print costs for each coffee in coffees and adding the sum to total
+     * @return
+     */
     public double getTotal(){
         double total = 0;
 
@@ -52,6 +76,11 @@ public class CoffeeOrder{
         return total;
     }
 
+    /**
+     * prints the user-selected coffee(s) and decorator(s) in addition to the total price and
+     * the date and time
+     * @return
+     */
     public String printOrder(){
 
         DateTimeFormatter timeFormat = DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mma");
