@@ -10,7 +10,7 @@ BlackCoffee File --> This is a file that will allow the user to print a coffee c
 
 Espresso File --> This file, similar to the BlackCoffee file, will create a coffee called Espresso and invoke some methods that will get the cost of Espresso, get the ingredients, and print the coffee object.
 
-CoffeeDecorator File --> 
+CoffeeDecorator File --> This file will be extended by other files and act as a super class to CoffeeDecorator sub-classes. These sub-classses would be able to pass modified coffee objects to the super class and invoke several methods to get the cost, print the coffee, and/or get the ingredients. 
 
 CoffeeOrder File --> 
 
