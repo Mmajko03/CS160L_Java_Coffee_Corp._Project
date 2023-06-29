@@ -1,0 +1,27 @@
+ORDER RECEIPT
+Timestamp: 2023-06-28 04:05PM
+Item 1: A black coffee - 1.00
+TOTAL = 1.00
+
+ORDER RECEIPT
+Timestamp: 2023-06-28 04:06PM
+Item 1: An espresso with milk - 2.30
+TOTAL = 2.30
+
+ORDER RECEIPT
+Timestamp: 2023-06-28 04:13PM
+Item 1: An espresso - 1.75
+Item 2: A black coffee - 1.00
+TOTAL = 2.75
+
+ORDER RECEIPT
+Timestamp: 2023-06-28 04:23PM
+Item 1: An espresso with sugar - 1.90
+TOTAL = 1.90
+
+ORDER RECEIPT
+Timestamp: 2023-06-28 04:40PM
+Item 1: An espresso with milk - 2.30
+Item 2: A black coffee with hot water with milk with Caramel flavor - 1.90
+TOTAL = 4.20
+
