@@ -8,7 +8,7 @@ getCost(), printCoffee(), and/or getIngredients().
 
 BlackCoffee File --> This is a file that will allow the user to print a coffee called a black coffee. The user will also be able to print the cost and ingredients of the black coffee object.
 
-Espresso File --> 
+Espresso File --> This file, similar to the BlackCoffee file, will create a coffee called Espresso and invoke some methods that will get the cost of Espresso, get the ingredients, and print the coffee object.
 
 CoffeeDecorator File --> 
 
