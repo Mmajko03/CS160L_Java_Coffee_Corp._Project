@@ -14,9 +14,9 @@ CoffeeDecorator File --> This file will be extended by other files and act as a 
 
 CoffeeOrder File --> This file will print the order that the user has created in the main menu along with the total cost of all the items, such as the coffee decorators and coffee objects, in addition to the date and time of when the order was created.
 
-Main File --> 
+Main File --> This is the file that will act as the driver of the program. This file, in addition to the main method, has other methods to manipulate an inventory of ingredients as well as write an order log og of the user's orders. Another method that this file has allows it to build a coffee order with regard to the user's choices.
 
-Syrup File --> 
+Syrup File --> This file will hold enumeration variables to be used in the WithFlavor file. These enums will act as addtional coffee decorators.
 
 WithFlavor File --> 
 
